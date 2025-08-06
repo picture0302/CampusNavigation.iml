@@ -1,0 +1,52 @@
+# IntelliJ IDEA 项目文件
+.idea/
+*.iml
+
+# 输出目录（编译产物）
+out/
+out/**
+
+# Maven 目录
+target/
+
+# Gradle 目录
+.gradle/
+build/
+
+# 依赖库目录（如果你项目中有本地 lib）
+lib/
+
+# 日志文件
+*.log
+
+# 操作系统文件
+.DS_Store
+
+# 临时文件
+*.class
+*.tmp
+*.swp
+*~
+
+# 其他 IDE 生成文件
+*.ipr
+*.iws
+
+# IntelliJ 特殊缓存和索引
+.idea/
+*.iws
+.idea_modules/
+
+# JetBrains Rider (如果用的话)
+.idea/
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+git rm -r --cached .idea
+git rm -r --cached out
+git rm -r --cached target
+git add .
+git commit -m "优化 .gitignore，清理不必要文件"
+git push
